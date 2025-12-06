@@ -1,17 +1,11 @@
 import React, { useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
 import './CSS/index.css'
 import NavBar from './components/NavBar.jsx'
 import Ribbons from './components/TargetCursor.jsx'
 import DotGrid from './components/Homepagebg.jsx';
 import MembershipApplication from './components/membership.jsx'
 
-
-
-
-
-
-  function RootApp() {
+function MembershipPage() {
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-slide');
     const observer = new IntersectionObserver(
@@ -52,10 +46,9 @@ import MembershipApplication from './components/membership.jsx'
         resistance={750}
         returnDuration={1.5}
       />
-   <MembershipApplication/>
-      </div>
+      <MembershipApplication/>
+    </div>
   )
 }
 
-createRoot(document.getElementById('root')).render(<RootApp />)
-export default RootApp;
+export default MembershipPage;

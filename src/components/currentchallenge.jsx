@@ -413,7 +413,7 @@ const ChallengeBanner = () => {
                 </div>
               </div>
 
-              <a href="challenges.html" className="challenge-cta">
+              <a href="/ChallengesPage" className="challenge-cta">
                 View Challenge
                 <ArrowRight className="arrow-icon" size={20} />
               </a>

@@ -158,7 +158,7 @@ export default function RecentProjects() {
       </div>
 
       <div style={{ display: "flex", justifyContent: "center", marginTop: 20 }}>
-        <a href="projects.html" style={{
+        <a href="/projectspage" style={{
           padding: "0.9rem 1.6rem",
           background: "linear-gradient(90deg,#5227FF,#8C52FF)",
           color: "white",

@@ -1,4 +1,4 @@
-"use client";
+import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import "../CSS/NavBar.css";
 
@@ -11,17 +11,15 @@ const NavBar = () => {
     <div className="navbar-container">
     <nav className="navbar ">
       <div className="navbar__logo">
-        <a href="index.html">
-        ALCC
-        </a>
+        <Link to="/">ALCC</Link>
       </div>
 
       <div className={`navbar__links ${isOpen ? "open" : ""}`}>
-        <a href="team.html">Team</a>
-        <a href="events.html">Events</a>
-        <a href="projects.html">Projects</a>
-        <a href="challenges.html">Challenges</a>
-        <a href="membership.html">Join us</a>
+        <Link to="/teampage">Team</Link>
+        <Link to="/EventsPage">Events</Link>
+        <Link to="/projectspage">Projects</Link>
+        <Link to="/ChallengesPage">Challenges</Link>
+        <Link to="/Membershipage">Join Us !</Link>
       </div>
 
       <div className="navbar__toggle" onClick={toggleMenu}>

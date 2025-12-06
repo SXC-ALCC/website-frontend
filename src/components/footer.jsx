@@ -293,11 +293,11 @@ const Footer = () => {
             <div className="footer-section">
               <h3 className="footer-title">Quick Links</h3>
               <ul className="footer-links">
-                <li><a href="#team" className="footer-link">Team</a></li>
-                <li><a href="#events" className="footer-link">Events</a></li>
-                <li><a href="#projects" className="footer-link">Projects</a></li>
-                <li><a href="#challenges" className="footer-link">Challenges</a></li>
-                <li><a href="#join" className="footer-link">Join Us</a></li>
+                <li><a href="/teampage" className="footer-link">Team</a></li>
+                <li><a href="/EventsPage" className="footer-link">Events</a></li>
+                <li><a href="/projectspage" className="footer-link">Projects</a></li>
+                <li><a href="/ChallengesPage" className="footer-link">Challenges</a></li>
+                <li><a href="/Membershipage" className="footer-link">Join Us</a></li>
               </ul>
             </div>
 

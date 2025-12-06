@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
 import './CSS/index.css'
 import NavBar from './components/NavBar.jsx'
 import Ribbons from './components/TargetCursor.jsx'
 import DotGrid from './components/Homepagebg.jsx';
 import TeamMembers from './components/team.jsx'
 
-
-  function RootApp() {
+function TeamPage() {
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-slide');
     const observer = new IntersectionObserver(
@@ -48,10 +46,9 @@ import TeamMembers from './components/team.jsx'
         resistance={750}
         returnDuration={1.5}
       />
-  <TeamMembers/>
-      </div>
+      <TeamMembers/>
+    </div>
   )
 }
 
-createRoot(document.getElementById('root')).render(<RootApp />)
-export default RootApp;
+export default TeamPage;

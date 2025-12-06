@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { createRoot } from 'react-dom/client'
 import './CSS/index.css'
 import NavBar from './components/NavBar.jsx'
 import AnimatedText from './components/AnimatedText.jsx'
@@ -12,7 +11,7 @@ import Footer from './components/footer.jsx'
 
 import PixelTransition from "./components/switchingImg.jsx"; // adjust the import if needed
 
-function RootApp() {
+function LandingPage() {
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-slide');
     const observer = new IntersectionObserver(
@@ -121,7 +120,7 @@ function RootApp() {
             <br /><br />
             Join a community where curiosity meets collaboration — where every project pushes what’s possible.
           </p>
-          <a href="projects.html" className="intro_button fade-slide delay-2">Explore Our Work</a>
+          <a href="/projectspage" className="intro_button fade-slide delay-2">Explore Our Work</a>
         </div>
       </section>
 
@@ -145,5 +144,5 @@ function RootApp() {
   )
 }
 
-createRoot(document.getElementById('root')).render(<RootApp />)
-export default RootApp;
+
+export default LandingPage;
